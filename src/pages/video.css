@@ -1,0 +1,14 @@
+.video{
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    /* para ter os compontentes em cima do video ele precisa ser relative */
+    position: relative;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+    /* vai encher todo o elemento pai dele */
+    object-fit: fill;
+}
