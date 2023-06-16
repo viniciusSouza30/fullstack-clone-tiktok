@@ -1,0 +1,57 @@
+.video-footer{
+    position: relative;
+    bottom: 20%;
+    color: white;
+    margin-left: 30px
+}
+
+.video-footer-text h3, .video-footer-text p{
+    padding-bottom: 20px
+}
+
+.video-footer-music{
+    display: flex;
+}
+
+.video-footer-music-text{
+    width: 80%;
+    /* aqui estou escondendo o texto quando ele a caixa de texto acaba e termina o tamanho. não deixo ele aparecer depois que o tamanho finaliza */
+    overflow-x: hidden;
+}
+
+.video-footer-music-text p{
+    animation: moveTheText 3s infinite linear;
+}
+
+.video-footer-record{
+    position: absolute;
+    bottom: 5px;
+    right:20px;
+    height: 50px;
+    /* este comando inverte as cores da img */
+    filter: invert(1);
+    animation: spinTheRecord 3s infinite linear
+}
+
+/* keyframe cria uma animação conforme os paremetros inicial e final duarante o tempo determinado. a animação abaixo é para poder girar*/
+
+@keyframes spinTheRecord{
+    /* estado inicial. esteja parado */
+    0%{
+        transform: rotate(0deg)
+    }
+
+    /* estado final. dê uma volta, esteja rodado */
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes moveTheText{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
