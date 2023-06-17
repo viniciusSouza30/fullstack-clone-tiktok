@@ -3,16 +3,16 @@ import "./videoFooter.css";
 // aqui estou importando uma biblioteca de fora. foi necessário fazer instalação confrome a documentação do Design Icon MU
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 
-function VideoFooter() {
+function VideoFooter({name, description, music}) {
   return (
     <div className='video-footer'>
         <div className='video-footer-text'>
-            <h3>@viniciussouza.marinelli</h3>
-            <p>Descrição do vídeo</p>
+            <h3>@{name}</h3>
+            <p>{description}</p>
             <div className='video-footer-music'>
                 <MusicNoteIcon className='video-footer-icon'/>
                 <div className='video-footer-music-text'>
-                    <p>Titulo da musica</p>
+                    <p>{music}</p>
                 </div>
             </div>
         </div>
