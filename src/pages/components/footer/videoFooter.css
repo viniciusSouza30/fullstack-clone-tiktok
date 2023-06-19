@@ -55,3 +55,13 @@
         transform: translateX(-100%);
     }
 }
+
+/* tela para celular */
+@media only screen and (max-width: 440px){
+    .video-footer{
+        bottom: 22%;
+    }
+    .video-footer-music-text{
+        width: 78%;
+    }
+}

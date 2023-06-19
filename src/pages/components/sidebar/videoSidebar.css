@@ -9,3 +9,10 @@
     padding: 20px;
     text-align: center;
 }
+
+/* tela para celular */
+@media only screen and (max-width: 440px){
+    .video-sidebar{
+        top: 46%;
+    }
+}
